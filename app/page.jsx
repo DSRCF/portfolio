@@ -23,7 +23,7 @@ export default function Home() {
                 Hello I'm <br /> <span className="text-blue-500">Safian</span>
               </h1>
               <p className="max-w-[500px] mb-9 text-muted-foreground">
-                 Skilled in Python, AI/ML, and web development, I craft practical and engaging digital solutions
+                Skilled in Python, AI/ML, and web development, I craft practical and engaging digital solutions
               </p>
               <div className="flex flex-col xl:flex-row items-center gap-8">
                 <Button 
