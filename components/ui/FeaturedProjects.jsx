@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { FiExternalLink, FiGithub, FiCode } from "react-icons/fi";
 import { 
   SiReact, 
@@ -14,6 +15,7 @@ import {
   SiSocketdotio,
   SiJavascript,
   SiCss3,
+  SiHtml5,
   SiFramer,
   SiExpress,
   SiFirebase,
@@ -51,6 +53,7 @@ const FeaturedProjects = () => {
       "Socket.io": "text-[#010101]",
       "JavaScript": "text-[#F7DF1E]",
       "CSS3": "text-[#1572B6]",
+      "HTML5": "text-[#E34F26]",
       "Framer Motion": "text-[#0055FF]",
       "Express": "text-[#000000]",
       "Firebase": "text-[#FFCA28]",
@@ -86,6 +89,22 @@ const FeaturedProjects = () => {
     },
     {
       id: 2,
+      title: "SecondLook",
+      description: "A price comparison web application that scrapes listings from multiple second-hand marketplaces and benchmarks them against the average eBay price.",
+      image: "",
+      technologies: [
+        { name: "HTML5", icon: SiHtml5 },
+        { name: "Tailwind CSS", icon: SiTailwindcss },
+        { name: "JavaScript", icon: SiJavascript },
+        { name: "Firebase", icon: SiFirebase },
+      ],
+      liveUrl: "#",
+      githubUrl: "#",
+      category: "Full-Stack",
+      featured: true
+    },
+    {
+      id: 3,
       title: "Portfolio Website",
       description: "A modern, responsive portfolio website showcasing my projects and skills. Built with Next.js, Tailwind CSS, and Framer Motion for smooth animations and excellent user experience.",
       image: "",
@@ -97,23 +116,6 @@ const FeaturedProjects = () => {
       ],
       liveUrl: "https://safiank.com",
       githubUrl: "https://github.com/SafianK/portfolio",
-      category: "Full-Stack",
-      featured: true
-    },
-    {
-      id: 3,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with user authentication, product management, shopping cart, and payment integration. Features real-time updates and responsive design.",
-      image: "",
-      technologies: [
-        { name: "React", icon: SiReact },
-        { name: "Node.js", icon: SiNodedotjs },
-        { name: "MongoDB", icon: SiMongodb },
-        { name: "Express", icon: SiExpress },
-        { name: "Socket.io", icon: SiSocketdotio },
-      ],
-      liveUrl: "#",
-      githubUrl: "#",
       category: "Full-Stack",
       featured: true
     }
@@ -192,7 +194,7 @@ const FeaturedProjects = () => {
                     onClick={() => window.open(project.liveUrl, '_blank')}
                   >
                     <FiExternalLink className="text-sm" />
-                    <span>Demo</span>
+                    <span>Live</span>
                   </Button>
                   <Button
                     variant="outline"
@@ -216,12 +218,16 @@ const FeaturedProjects = () => {
             Check out my complete portfolio and GitHub repositories for more projects and contributions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="uppercase">
-              View All Projects
-            </Button>
-            <Button variant="outline" size="lg" className="uppercase">
-              Visit GitHub
-            </Button>
+            <Link href="/projects">
+              <Button size="lg" className="uppercase hover:scale-105 hover:shadow-lg transition-all duration-200">
+                View All Projects
+              </Button>
+            </Link>
+            <Link href="https://github.com/DSRCF">
+              <Button variant="outline" size="lg" className="uppercase hover:scale-105 hover:shadow-lg transition-all duration-200">
+                Visit GitHub
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

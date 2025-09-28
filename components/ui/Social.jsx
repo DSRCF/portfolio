@@ -1,11 +1,10 @@
 import Link from "next/link";
 
-import {FaGithub, FaKaggle, FaYoutube, FaTwitter } from "react-icons/fa";
+import {FaGithub, FaKaggle } from "react-icons/fa";
 
 const socials = [
   { icon: <FaGithub />, path: "https://github.com/DSRCF" },
   { icon: <FaKaggle />, path: "" },
-  { icon: <FaYoutube />, path: "" },
 ];
 
 const Social = ({ containerStyles, iconStyles }) => {

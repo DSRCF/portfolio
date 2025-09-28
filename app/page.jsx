@@ -1,10 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { FiDownload } from "react-icons/fi";
+import { ChevronDown } from "lucide-react";
 
 // components
 import Social from "@/components/ui/Social";
 import Photo from "@/components/ui/photo";
-import Stats from "@/components/ui/Stats";
 import SkillsSection from "@/components/ui/SkillsSection";
 import FeaturedProjects from "@/components/ui/FeaturedProjects";
 import ContactSection from "@/components/ui/ContactSection";
@@ -23,21 +22,13 @@ export default function Home() {
                 Hello I'm <br /> <span className="text-blue-500">Safian</span>
               </h1>
               <p className="max-w-[500px] mb-9 text-muted-foreground">
-                Skilled in Python, AI/ML, and web development, I craft practical and engaging digital solutions
+                <b>Skilled in Python, AI/ML, and web development, I craft practical and engaging digital solutions</b>
               </p>
               <div className="flex flex-col xl:flex-row items-center gap-8">
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="uppercase flex items-center gap-2"
-                >
-                  <span>Download CV</span>
-                  <FiDownload className="text-xl"/>
-                </Button>
                 <div className="mb-8 xl:mb-0">
                   <Social 
                     containerStyles="flex gap-6" 
-                    iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-200"
+                    iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-200 hover:scale-110 hover:shadow-lg"
                   />
                 </div>
               </div>
@@ -51,8 +42,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section - separate section like in working HTML */}
-      <Stats />
+      {/* Scroll Down Indicator - replaces the stats section */}
+      <section className="py-8">
+        <div className="container mx-auto">
+          <div className="flex justify-center">
+            <div className="flex flex-col items-center gap-2 text-muted-foreground animate-bounce">
+              <span className="text-xl font-medium">Scroll Down</span>
+              <ChevronDown className="w-6 h-6" />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Additional Sections */}
       <SkillsSection />

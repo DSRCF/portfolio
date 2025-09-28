@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { FiDownload } from "react-icons/fi";
 import { FiCode, FiDatabase, FiSmartphone, FiGlobe } from "react-icons/fi";
 import { FaBrain } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -58,16 +57,6 @@ const About = () => {
               </p>
             </div>
             
-            <div className="mt-8">
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="uppercase flex items-center gap-2"
-              >
-                <span>Download CV</span>
-                <FiDownload className="text-xl"/>
-              </Button>
-            </div>
           </div>
 
           {/* Skills */}

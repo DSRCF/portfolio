@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { FiExternalLink, FiGithub, FiCode, FiDatabase, FiSmartphone, FiGlobe, FiShield, FiSmartphone as FiMobile } from "react-icons/fi";
 import { 
   SiReact, 
@@ -187,7 +188,7 @@ const Projects = () => {
                       onClick={() => window.open(project.liveUrl, '_blank')}
                     >
                       <FiExternalLink className="text-sm" />
-                      <span>Demo</span>
+                      <span>Live</span>
                     </Button>
                     <Button
                       variant="outline"
@@ -211,9 +212,11 @@ const Projects = () => {
               I'm always open to discussing new opportunities and exciting projects. 
               Let's create something amazing together!
             </p>
-            <Button size="lg" className="uppercase">
-              Get In Touch
-            </Button>
+            <Link href="/contact">
+              <Button size="lg" className="uppercase">
+                Get In Touch
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
