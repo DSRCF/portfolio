@@ -62,7 +62,7 @@ const Photo = () => {
                     }}
                     className="absolute inset-0 m-auto w-[250px] h-[250px] xl:w-[370px] xl:h-[370px] z-10 flex items-center justify-center"
                 >
-                    <Image
+                    <img
                         src="/assets/picture.png"
                         priority
                         quality={100}
