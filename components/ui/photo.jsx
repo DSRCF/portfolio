@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const CIRCUMFERENCE = 2 * Math.PI * 250; 
 
@@ -65,7 +64,7 @@ const Photo = () => {
                     <img
                         src="/assets/picture.png"
                         alt="Profile Picture"
-                        className="object-contain"
+                        className="object-contain w-full h-full"
                     />
                 </motion.div>
             </motion.div>
