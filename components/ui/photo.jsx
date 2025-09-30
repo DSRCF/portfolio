@@ -64,10 +64,7 @@ const Photo = () => {
                 >
                     <img
                         src="/assets/picture.png"
-                        priority
-                        quality={100}
-                        fill
-                        alt=""
+                        alt="Profile Picture"
                         className="object-contain"
                     />
                 </motion.div>
