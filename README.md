@@ -1,6 +1,6 @@
-This is my personal portfolio website, built with Next.js and hosted on Vercel. It showcases my projects, technical skills, and background in Computer Science and AI.
+This is my personal portfolio website, built with Next.js and hosted on Cloudflare. It showcases my projects, technical skills, and background in Computer Science and AI.
 
-🔗 Live Site: https://safiank.vercel.app/
+🔗 Live Site: https://safiankhan.com
 
 Features
 Responsive design with modern UI
@@ -23,7 +23,7 @@ Tech Stack
 Next.js
 React
 Tailwind CSS
-Vercel (deployment)
+Cloudflare (deployment)
 License
 
 This project is open source and available under the MIT License.
