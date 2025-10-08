@@ -5,12 +5,10 @@ This is my personal portfolio website, built with Next.js and hosted on Cloudfla
 Features
 Responsive design with modern UI
 Project showcase with detailed writeups
-Contact section with links to GitHub, LinkedIn, and email
+Contact section with links to GitHub and email
 Built with Next.js 14 and styled using Tailwind CSS
-Running Locally
 
 Clone the repository and install dependencies:
-
 git clone https://github.com/DSRCF/portfolio.git
 cd portfolio
 npm install
