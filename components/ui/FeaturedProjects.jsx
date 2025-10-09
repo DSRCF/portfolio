@@ -91,7 +91,7 @@ const FeaturedProjects = () => {
       id: 2,
       title: "Second Look",
       description: "A price comparison web application that scrapes listings from multiple second-hand marketplaces and benchmarks them against the average eBay price.",
-      image: "/assets/SecondLook.png",
+      image: "/assets/secondlook.png",
       technologies: [
         { name: "Python", icon: SiPython },
         { name: "NEXT.js", icon: SiNextdotjs },
