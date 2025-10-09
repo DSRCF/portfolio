@@ -89,25 +89,25 @@ const FeaturedProjects = () => {
     },
     {
       id: 2,
-      title: "SecondLook",
+      title: "Second Look",
       description: "A price comparison web application that scrapes listings from multiple second-hand marketplaces and benchmarks them against the average eBay price.",
-      image: "",
+      image: "/assets/SecondLook.png",
       technologies: [
-        { name: "HTML5", icon: SiHtml5 },
+        { name: "Python", icon: SiPython },
+        { name: "NEXT.js", icon: SiNextdotjs },
         { name: "Tailwind CSS", icon: SiTailwindcss },
-        { name: "JavaScript", icon: SiJavascript },
-        { name: "Firebase", icon: SiFirebase },
+        { name: "TypeScript", icon: SiTypescript },
+        { name: "PostgreSQL", icon: SiPostgresql },
       ],
       liveUrl: "#",
       githubUrl: "#",
-      category: "Full-Stack",
-      featured: true
+      category: "Full-Stack"
     },
     {
       id: 3,
       title: "Portfolio Website",
-      description: "A modern, responsive portfolio website showcasing my projects and skills. Built with Next.js, Tailwind CSS, and Framer Motion for smooth animations and excellent user experience.",
-      image: "",
+      description: "A modern, responsive portfolio website showcasing my projects and skills.",
+      image: "/assets/portfolio.png",
       technologies: [
         { name: "Next.js", icon: SiNextdotjs },
         { name: "Tailwind CSS", icon: SiTailwindcss },

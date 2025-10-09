@@ -86,9 +86,25 @@ const Projects = () => {
     },
     {
       id: 2,
+      title: "Second Look",
+      description: "A price comparison web application that scrapes listings from multiple second-hand marketplaces and benchmarks them against the average eBay price.",
+      image: "/assets/SecondLook.png",
+      technologies: [
+        { name: "Python", icon: SiPython },
+        { name: "NEXT.js", icon: SiNextdotjs },
+        { name: "Tailwind CSS", icon: SiTailwindcss },
+        { name: "TypeScript", icon: SiTypescript },
+        { name: "PostgreSQL", icon: SiPostgresql },
+      ],
+      liveUrl: "#",
+      githubUrl: "#",
+      category: "Full-Stack"
+    },
+    {
+      id: 3,
       title: "Portfolio Website",
-      description: "A portfolio website to showcase my projects and skills, built with Next.js, Tailwind CSS, and Framer Motion.",
-      image: "",
+      description: "A portfolio website to showcase my projects and skills.",
+      image: "/assets/portfolio.png",
       technologies: [
         { name: "Next.js", icon: SiNextdotjs },
         { name: "Tailwind CSS", icon: SiTailwindcss },
@@ -100,7 +116,6 @@ const Projects = () => {
     }
   ];
 
-  const categories = ["All", "Full-Stack", "Frontend", "Backend"];
 
   return (
     <section className="h-full">
@@ -111,22 +126,8 @@ const Projects = () => {
             <h1 className="h1 mb-4 underline underline-offset-8">Projects</h1>
             <p className="text-foreground max-w-2xl mx-auto">
               Here are some of the projects I've worked on. Each project represents 
-              different skills and technologies I've mastered throughout my development journey.
+              different skills and technologies I've used throughout my development journey.
             </p>
-          </div>
-
-          {/* Category Filter */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {categories.map((category) => (
-              <Button
-                key={category}
-                variant="outline"
-                size="lg"
-                className="uppercase"
-              >
-                {category}
-              </Button>
-            ))}
           </div>
 
           {/* Projects Grid */}
